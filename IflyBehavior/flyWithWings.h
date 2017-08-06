@@ -13,7 +13,7 @@ class flyWithWings : public IflyBehavior {
 public:
 	flyWithWings();
 	virtual ~flyWithWings();
-	bool fly();
+	virtual bool fly() const;
 };
 
 #endif /* FLYWITHWINGS_H_ */

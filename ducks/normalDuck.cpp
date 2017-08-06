@@ -18,8 +18,8 @@ normalDuck::~normalDuck() {
 	// TODO Auto-generated destructor stub
 }
 
-bool normalDuck::performFly(){
-	flyWithWings* flySkill;
-	this->fly(flySkill);
+bool normalDuck::fly(){
+	IflyBehavior* flySkill = new flyWithWings();
+	flySkill->fly();
 	return true;
 }

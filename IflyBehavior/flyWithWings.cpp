@@ -18,7 +18,7 @@ flyWithWings::~flyWithWings() {
 	// TODO Auto-generated destructor stub
 }
 
-bool flyWithWings::fly(){
+bool flyWithWings::fly() const{
 	cout<< "I'm flying!" <<endl;
 	return true;
 }

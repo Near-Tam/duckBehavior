@@ -13,7 +13,7 @@ class normalDuck : public duckBase{
 public:
 	normalDuck();
 	virtual ~normalDuck();
-	bool performFly();
+	virtual bool fly();
 
 };
 

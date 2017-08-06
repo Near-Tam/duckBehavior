@@ -10,8 +10,8 @@
 using namespace std;
 
 int main(){
-	normalDuck duck1;
-	duck1.performFly();
+	duckBase* duck1 = new normalDuck();
+	duck1->fly();
 	cout<< "end" <<endl;
 	return 0;
 }
