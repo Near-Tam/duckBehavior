@@ -13,6 +13,7 @@ public:
 	babyDuck();
 	virtual ~babyDuck();
 	virtual bool fly();
+	virtual bool quack();
 };
 
 #endif /* BABYDUCK_H_ */

@@ -14,6 +14,7 @@ public:
 	duckBase();
 	virtual ~duckBase();
 	virtual bool fly()=0;
+	virtual bool quack()=0;
 
 };
 

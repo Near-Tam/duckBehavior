@@ -14,6 +14,7 @@ public:
 	normalDuck();
 	virtual ~normalDuck();
 	virtual bool fly();
+	virtual bool quack();
 
 };
 

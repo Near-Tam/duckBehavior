@@ -12,6 +12,7 @@ using namespace std;
 int main(){
 	duckBase* duck1 = new normalDuck();
 	duck1->fly();
+	duck1->quack();
 
 	duckBase* duck2 = new babyDuck();
 	duck2->fly();

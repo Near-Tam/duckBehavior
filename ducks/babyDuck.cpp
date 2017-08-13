@@ -21,3 +21,7 @@ bool babyDuck::fly(){
 	flySkill->fly();
 	return true;
 }
+
+bool babyDuck::quack(){
+	return true;
+}

@@ -6,6 +6,8 @@
  */
 #include "../IflyBehavior/IflyBehavior.h"
 #include "../IflyBehavior/flyWithWings.h"
+#include "../IQuackBehavior/IQuackBehavior.h"
+#include "../IQuackBehavior/Quack.h"
 #include "normalDuck.h"
 #include "duckBase.h"
 
@@ -21,5 +23,11 @@ normalDuck::~normalDuck() {
 bool normalDuck::fly(){
 	IflyBehavior* flySkill = new flyWithWings();
 	flySkill->fly();
+	return true;
+}
+
+bool normalDuck::quack(){
+	IQuackBehavior* quackSkill = new Quack();
+	quackSkill->quack();
 	return true;
 }
