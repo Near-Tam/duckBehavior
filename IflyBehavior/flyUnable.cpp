@@ -19,6 +19,6 @@ flyUnable::~flyUnable() {
 }
 
 bool flyUnable::fly() const{
-	cout<< "I can't fly." <<endl;
+	cout<< "I can't fly!!" <<endl;
 	return true;
 }
