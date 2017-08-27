@@ -10,6 +10,14 @@ make
 cd ${path}/IflyBehavior
 make
 
+#make IBoardCastToDucks
+cd ${path}/IBoardCastToDucks
+make
+
 #make ducks
 cd ${path}/ducks
+make
+
+#make main
+cd ${path}
 make

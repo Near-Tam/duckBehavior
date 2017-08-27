@@ -5,6 +5,8 @@
  *      Author: neablister
  */
 #include "duckBase.h"
+#include "../IBoardCastToDucks/IBoardCastToDucks.h"
+#include "../IBoardCastToDucks/BoardCastToBabyDucks.h"
 
 #ifndef NORMALDUCK_H_
 #define NORMALDUCK_H_
@@ -15,6 +17,13 @@ public:
 	virtual ~normalDuck();
 	virtual bool fly();
 	virtual bool quack();
+	void registerObservers(babyDuck* Observer);
+	void removeObervers(babyDuck* Observer);
+	void notifyObservers();
+	void callBabyDucks();
+
+private:
+	IBoardCastToDucks* callBabyDucksSkill = new BoardCastToBabyDucks();
 
 };
 

@@ -14,6 +14,7 @@ public:
 	virtual ~babyDuck();
 	virtual bool fly();
 	virtual bool quack();
+	void getMsg();
 };
 
 #endif /* BABYDUCK_H_ */

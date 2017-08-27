@@ -10,12 +10,24 @@
 using namespace std;
 
 int main(){
-	duckBase* duck1 = new normalDuck();
-	duck1->fly();
-	duck1->quack();
+	normalDuck* femalDuck = new normalDuck();
+	femalDuck->fly();
+	femalDuck->quack();
 
-	duckBase* duck2 = new babyDuck();
-	duck2->fly();
+	babyDuck* babyDuck_Tom = new babyDuck();
+	babyDuck* babyDuck_Jim = new babyDuck();
+	babyDuck* babyDuck_Amy = new babyDuck();
+
+	femalDuck->registerObservers(babyDuck_Tom);
+	femalDuck->registerObservers(babyDuck_Jim);
+	femalDuck->registerObservers(babyDuck_Amy);
+
+	femalDuck->callBabyDucks();
+	cout<< "end1" <<endl;
+	femalDuck->removeObervers(babyDuck_Amy);
+
+	femalDuck->callBabyDucks();
+
 	cout<< "end" <<endl;
 	return 0;
 }
