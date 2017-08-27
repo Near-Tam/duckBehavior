@@ -11,8 +11,8 @@ cd ${path}/IflyBehavior
 make
 
 #make IBoardCastToDucks
-cd ${path}/IBoardCastToDucks
-make
+#cd ${path}/IBoardCastToDucks
+#make
 
 #make ducks
 cd ${path}/ducks
