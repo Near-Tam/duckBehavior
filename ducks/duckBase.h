@@ -10,7 +10,7 @@
 
 class duckBase {
 public:
-
+	char* Name;
 	duckBase();
 	virtual ~duckBase();
 	virtual bool fly()=0;

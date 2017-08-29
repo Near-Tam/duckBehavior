@@ -10,8 +10,10 @@
 
 class babyDuck : public duckBase{
 public:
-	babyDuck();
+	babyDuck(char* name);
 	virtual ~babyDuck();
+
+	char* Name;
 	virtual bool fly();
 	virtual bool quack();
 	void getMsg();

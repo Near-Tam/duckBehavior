@@ -12,7 +12,9 @@
 #include "iostream"
 using namespace std;
 
-babyDuck::babyDuck() {
+babyDuck::babyDuck(char* name) :
+		Name(name)
+{
 	// TODO Auto-generated constructor stub
 
 }
@@ -34,6 +36,7 @@ bool babyDuck::quack(){
 }
 
 void babyDuck::getMsg(){
-	cout<< "I get the message" <<endl;
+	cout<< this->Name << ": I get the message" <<endl;
 	this->quack();
+	cout<< "\n" <<endl;
 }

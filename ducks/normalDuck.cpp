@@ -13,7 +13,9 @@
 #include "../IBoardCastToDucks/IBoardCastToDucks.h"
 #include "../IBoardCastToDucks/BoardCastToBabyDucks.h"
 
-normalDuck::normalDuck() {
+normalDuck::normalDuck(char* name) :
+				Name(name)
+{
 	// TODO Auto-generated constructor stub
 
 }

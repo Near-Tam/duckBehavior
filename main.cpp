@@ -10,13 +10,13 @@
 using namespace std;
 
 int main(){
-	normalDuck* femalDuck = new normalDuck();
+	normalDuck* femalDuck = new normalDuck("Lily");
 	femalDuck->fly();
 	femalDuck->quack();
 
-	babyDuck* babyDuck_Tom = new babyDuck();
-	babyDuck* babyDuck_Jim = new babyDuck();
-	babyDuck* babyDuck_Amy = new babyDuck();
+	babyDuck* babyDuck_Tom = new babyDuck("Tom");
+	babyDuck* babyDuck_Jim = new babyDuck("Jim");
+	babyDuck* babyDuck_Amy = new babyDuck("Amy");
 
 	femalDuck->registerObservers(babyDuck_Tom);
 	femalDuck->registerObservers(babyDuck_Jim);

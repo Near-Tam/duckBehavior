@@ -13,8 +13,10 @@
 
 class normalDuck : public duckBase{
 public:
-	normalDuck();
+	normalDuck(char* name);
 	virtual ~normalDuck();
+
+	char* Name;
 	virtual bool fly();
 	virtual bool quack();
 	void registerObservers(babyDuck* Observer);
