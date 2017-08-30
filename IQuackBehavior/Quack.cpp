@@ -19,6 +19,6 @@ Quack::~Quack() {
 }
 
 bool Quack::quack() const{
-	cout<<"hahaha"<<endl;
+	cout<<"hahahaha"<<endl;
 	return true;
 }
