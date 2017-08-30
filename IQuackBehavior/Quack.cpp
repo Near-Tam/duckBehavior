@@ -19,7 +19,6 @@ Quack::~Quack() {
 }
 
 bool Quack::quack() const{
-	cout<<"gagaga"<<endl;
+	cout<<"hahaha"<<endl;
 	return true;
 }
-
