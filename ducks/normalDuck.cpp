@@ -17,7 +17,9 @@ normalDuck::normalDuck(char* name) :
 				Name(name)
 {
 	// TODO Auto-generated constructor stub
-
+	this->callBabyDucksSkill = new BoardCastToBabyDucks();
+	this->flySkill = new flyWithWings();
+	this->quackSkill = new Quack();
 }
 
 normalDuck::~normalDuck() {
@@ -25,11 +27,13 @@ normalDuck::~normalDuck() {
 }
 
 bool normalDuck::fly(){
+	this->flySkill = new flyWithWings();
 	this->flySkill->fly();
 	return true;
 }
 
 bool normalDuck::quack(){
+	this->quackSkill = new Quack();
 	this->quackSkill->quack();
 	return true;
 }

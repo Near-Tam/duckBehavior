@@ -16,6 +16,8 @@ babyDuck::babyDuck(char* name) :
 		Name(name)
 {
 	// TODO Auto-generated constructor stub
+	this->quackSkill = new Quack();
+	this->flySkill = new flyUnable();
 
 }
 
@@ -24,14 +26,13 @@ babyDuck::~babyDuck() {
 }
 
 bool babyDuck::fly(){
-	IflyBehavior* flySkill = new flyUnable();
-	flySkill->fly();
+    this->flySkill = new flyUnable();
+	this->flySkill->fly();
 	return true;
 }
 
 bool babyDuck::quack(){
-	IQuackBehavior* quackSkill = new Quack();
-	quackSkill->quack();
+	this->quackSkill->quack();
 	return true;
 }
 

@@ -29,9 +29,9 @@ public:
 	void callBabyDucks();
 
 private:
-	IflyBehavior* flySkill = new flyWithWings();
-	IQuackBehavior* quackSkill = new Quack();
-	IBoardCastToDucks* callBabyDucksSkill = new BoardCastToBabyDucks();
+	IflyBehavior* flySkill;
+	IQuackBehavior* quackSkill;
+	IBoardCastToDucks* callBabyDucksSkill;
 
 };
 
