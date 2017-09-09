@@ -7,6 +7,10 @@
 #include "duckBase.h"
 #include "../IBoardCastToDucks/IBoardCastToDucks.h"
 #include "../IBoardCastToDucks/BoardCastToBabyDucks.h"
+#include "../IflyBehavior/IflyBehavior.h"
+#include "../IflyBehavior/flyWithWings.h"
+#include "../IQuackBehavior/IQuackBehavior.h"
+#include "../IQuackBehavior/Quack.h"
 
 #ifndef NORMALDUCK_H_
 #define NORMALDUCK_H_
@@ -25,6 +29,8 @@ public:
 	void callBabyDucks();
 
 private:
+	IflyBehavior* flySkill = new flyWithWings();
+	IQuackBehavior* quackSkill = new Quack();
 	IBoardCastToDucks* callBabyDucksSkill = new BoardCastToBabyDucks();
 
 };

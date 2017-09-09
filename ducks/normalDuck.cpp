@@ -25,14 +25,12 @@ normalDuck::~normalDuck() {
 }
 
 bool normalDuck::fly(){
-	IflyBehavior* flySkill = new flyWithWings();
-	flySkill->fly();
+	this->flySkill->fly();
 	return true;
 }
 
 bool normalDuck::quack(){
-	IQuackBehavior* quackSkill = new Quack();
-	quackSkill->quack();
+	this->quackSkill->quack();
 	return true;
 }
 
