@@ -6,3 +6,5 @@
 # File: duck
 ## duckBase.cpp 与 duckBase.h 鸭子的基类
 ## normalDuck.cpp 与normalDuck.h 其中一种鸭子
+
+![关系图](https://github.com/Near-Tam/duckBehavior/blob/master/uml.jpg)
