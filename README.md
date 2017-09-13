@@ -1,10 +1,14 @@
-# 主函数main.cpp
-# File: IflyBehavior
-## IflyBehavior.cpp 与 IflyBehavior.h 实现接口
-## flyWithWings.cpp 与 flyWithWings.h 实现其中一种飞行方式
+# c++面向对象设计模式
 
-# File: duck
-## duckBase.cpp 与 duckBase.h 鸭子的基类
-## normalDuck.cpp 与normalDuck.h 其中一种鸭子
+## 使用方法
+```
+git clone https://github.com/Near-Tam/duckBehavior.git
+sudo chmod +x build.sh
+./build.sh
+```
 
+## 单独模块编译
+进入对应的目录执行make命令
+
+## 关系图
 ![关系图](https://github.com/Near-Tam/duckBehavior/blob/master/uml.jpg)
